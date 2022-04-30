@@ -105,7 +105,7 @@ export async function createPet(createForm) {
     image === ""
   ) {
     alert("All fields must be filled in.");
-    return;
+    ctx.page.redirect("/create");
   }
 
   let createdPet = await request.post(urls.toCreatePet, {
