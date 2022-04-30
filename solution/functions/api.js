@@ -20,12 +20,12 @@ export async function login(loginForm) {
 
   if (email === "") {
     alert("You must type a valid e-mail address.");
-    return;
+    ctx.page.redirect("/login");
   }
 
   if (password === "") {
     alert("You must create a password.");
-    return;
+    ctx.page.redirect("/login");
   }
 
   let user = await request.post(urls.toLogin, { email, password });
@@ -47,17 +47,17 @@ export async function register(registerForm) {
 
   if (email === "") {
     alert("You must type a valid e-mail address.");
-    return;
+    ctx.page.redirect("/register");
   }
 
   if (password === "") {
     alert("You must create a password.");
-    return;
+    ctx.page.redirect("/register");
   }
 
   if (repeatedPassword === "" || repeatedPassword !== password) {
     alert("Your passwords do not match.");
-    return;
+    ctx.page.redirect("/register");
   }
 
   let user = await request.post(urls.toRegister, {
@@ -202,4 +202,11 @@ export async function donate(ctx) {
   ctx.page.redirect(`/details/${petId}`);
 
   return donation;
+}
+
+export function requirements() {
+  window.open(
+    "https://firebasestorage.googleapis.com/v0/b/etpetcarespa.appspot.com/o/Pet%20Care_%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5.pdf?alt=media&token=578457af-dc72-40bc-8e47-b89323e76af8",
+    "_blank"
+  );
 }
