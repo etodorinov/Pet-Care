@@ -9,7 +9,17 @@ import {
 
 import { showLogin } from "./views/loginView.js";
 import { showRegister } from "./views/registerView.js";
-import { donate, github, logout, removePet, requirements } from "./functions/api.js";
+import {
+  donate,
+  exam,
+  firebase,
+  github,
+  heroku,
+  logout,
+  removePet,
+  requirements,
+  softuni,
+} from "./functions/api.js";
 import { showHome } from "./views/homeView.js";
 import { showDashboard } from "./views/dashboardView.js";
 import { showCreate } from "./views/createView.js";
@@ -31,7 +41,11 @@ page("/logout", logout);
 page("/remove/:id", removePet);
 page("/donate/:id", donate);
 page("/requirements", requirements);
-page("/github", github)
+page("/github", github);
+page("/heroku", heroku);
+page("/firebase", firebase);
+page("/exam", exam);
+page("/softuni", softuni);
 
 page.start();
 
