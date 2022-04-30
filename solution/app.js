@@ -1,4 +1,5 @@
-import page from "../node_modules/page/page.mjs";
+// import page from "../node_modules/page/page.mjs";
+import page from "https://unpkg.com/page@1.11.6/page.mjs";
 
 import {
   allRender,
@@ -8,7 +9,7 @@ import {
 
 import { showLogin } from "./views/loginView.js";
 import { showRegister } from "./views/registerView.js";
-import { donate, logout, removePet } from "./functions/api.js";
+import { donate, github, logout, removePet, requirements } from "./functions/api.js";
 import { showHome } from "./views/homeView.js";
 import { showDashboard } from "./views/dashboardView.js";
 import { showCreate } from "./views/createView.js";
@@ -29,6 +30,8 @@ page("/register", showRegister);
 page("/logout", logout);
 page("/remove/:id", removePet);
 page("/donate/:id", donate);
+page("/requirements", requirements);
+page("/github", github)
 
 page.start();
 
