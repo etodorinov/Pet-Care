@@ -146,7 +146,7 @@ export async function editPet(petId, editForm) {
     image === ""
   ) {
     alert("All fields must be filled in.");
-    ctx.page.redirect("/edit/:id")
+    ctx.page.redirect("/edit/:id");
   }
 
   let editedPet = await request.put(urls.toEditPet + petId, {
@@ -204,9 +204,15 @@ export async function donate(ctx) {
   return donation;
 }
 
-export function requirements() {
+export function requirements(ctx) {
   window.open(
     "https://firebasestorage.googleapis.com/v0/b/etpetcarespa.appspot.com/o/Pet%20Care_%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5.pdf?alt=media&token=578457af-dc72-40bc-8e47-b89323e76af8",
     "_blank"
   );
+  ctx.page.redirect("/");
+}
+
+export function github(ctx) {
+  window.open("https://github.com", "_blank");
+  ctx.page.redirect("/");
 }
