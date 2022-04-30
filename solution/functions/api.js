@@ -234,8 +234,3 @@ export function exam(ctx) {
   );
   ctx.page.redirect("/");
 }
-
-export function softuni(ctx) {
-  window.open("https://softuni.bg/", "_blank");
-  ctx.page.redirect("/");
-}
