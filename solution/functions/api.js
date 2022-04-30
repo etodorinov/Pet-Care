@@ -146,7 +146,7 @@ export async function editPet(petId, editForm) {
     image === ""
   ) {
     alert("All fields must be filled in.");
-    return;
+    ctx.page.redirect("/edit/:id")
   }
 
   let editedPet = await request.put(urls.toEditPet + petId, {
