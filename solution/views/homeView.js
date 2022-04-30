@@ -7,13 +7,23 @@ const homeViewTemplate = () => html` <section class="welcome-content">
     <h1 class="bold-welcome">Your Pets</h1>
     <p>
       This is my solution of the task given on SoftUni JavaScript Applications
-      exam conducted on 02 April 2022.
+      <a href="/exam">exam</a> conducted on 02 April 2022.
+    </p>
+    <p>
+      The application is hosted on <a href="/heroku">Heroku</a> and
+      <a href="/firebase">Firebase</a> combined so the initial load may take
+      little longer as it takes some time to "wake up" the application.
     </p>
     <p position="absolute">
-      <span>
-        <a href="/requirements">Pet Care_requirements</a>
-        (clicking on the link will open a new tab which will display a .pdf file with the requirements for this SPA (Single Page Application)).</span>
-        <p>Link to <a href="/github">GitHub</a> for code review may be provided upon request.</p>
+      <span
+        ><a href="/requirements">Pet Care_requirements</a> - clicking on the
+        link will open a new tab which will display a .pdf file with the
+        requirements for this SPA (Single Page Application).</span
+      >
+    </p>
+    <p>
+      Link to <a href="/github">GitHub</a> for code review may be provided upon
+      request.
     </p>
   </article>
   <article class="welcome-content-image">
