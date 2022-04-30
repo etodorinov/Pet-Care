@@ -216,3 +216,26 @@ export function github(ctx) {
   window.open("https://github.com", "_blank");
   ctx.page.redirect("/");
 }
+
+export function heroku(ctx) {
+  window.open("https://www.heroku.com/", "_blank");
+  ctx.page.redirect("/");
+}
+
+export function firebase(ctx) {
+  window.open("https://firebase.google.com/", "_blank");
+  ctx.page.redirect("/");
+}
+
+export function exam(ctx) {
+  window.open(
+    "https://judge.softuni.org/Contests/3432/JS-Applications-Exam-2-April-2022",
+    "_blank"
+  );
+  ctx.page.redirect("/");
+}
+
+export function softuni(ctx) {
+  window.open("https://softuni.bg/", "_blank");
+  ctx.page.redirect("/");
+}
