@@ -6,13 +6,15 @@ const homeViewTemplate = () => html` <section class="welcome-content">
     <h1>We Care</h1>
     <h1 class="bold-welcome">Your Pets</h1>
     <p>
-      This is my solution of the task given on SoftUni JavaScript Applications
+      This is my solution of the task for creation of SPA (Single Page
+      Application) given on <a href="/softuni">SoftUni</a> JavaScript Applications
       <a href="/exam">exam</a> conducted on 02 April 2022.
     </p>
     <p>
       The application is hosted on <a href="/heroku">Heroku</a> and
-      <a href="/firebase">Firebase</a> combined so the initial load may take
-      little longer as it takes some time to "wake up" the application.
+      <a href="/firebase">Firebase</a> combined so the initial load of the
+      functionalities may take little longer as it takes some time to "wake up"
+      the servers.
     </p>
     <p position="absolute">
       <span
