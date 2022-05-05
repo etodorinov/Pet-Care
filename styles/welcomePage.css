@@ -41,3 +41,7 @@ h1.bold-welcome {
 .welcome-content-image img {
   width: 100%;
 }
+
+.content {
+  text-align: justify;
+}
