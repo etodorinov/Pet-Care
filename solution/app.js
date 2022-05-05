@@ -18,6 +18,7 @@ import {
   logout,
   removePet,
   requirements,
+  softuni,
 } from "./functions/api.js";
 import { showHome } from "./views/homeView.js";
 import { showDashboard } from "./views/dashboardView.js";
@@ -44,6 +45,7 @@ page("/github", github);
 page("/heroku", heroku);
 page("/firebase", firebase);
 page("/exam", exam);
+page("/softuni", softuni);
 
 page.start();
 
