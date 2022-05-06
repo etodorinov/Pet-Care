@@ -11,8 +11,8 @@ const homeViewTemplate = () => html` <section class="welcome-content">
       Applications <a href="/exam">exam</a> conducted on 02 April 2022.
     </p>
     <p class="content">
-      The application is hosted on <a href="/heroku">Heroku</a> and
-      <a href="/firebase">Firebase</a> combined so the initial load of the
+      The application is hosted on <a href="/heroku">Heroku</a> (backend) and
+      <a href="/firebase">Firebase</a> (frontend) combined so the initial load of the
       functionalities may take little longer as it takes some time to "wake up"
       the servers.
     </p>
