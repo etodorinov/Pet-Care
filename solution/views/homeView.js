@@ -6,7 +6,7 @@ const homeViewTemplate = () => html` <section class="welcome-content">
     <h1>We Care</h1>
     <h1 class="bold-welcome">Your Pets</h1>
     <p class="content">
-      This is my solution of the task for creation of SPA (Single Page
+      This is Emil Todorinov's solution of the task for creation of SPA (Single Page
       Application) given on <a href="/softuni">SoftUni</a> JavaScript
       Applications <a href="/exam">exam</a> conducted on 02 April 2022.
     </p>
